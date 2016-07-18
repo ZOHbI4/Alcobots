@@ -1,0 +1,243 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Tahoma', 'Arial', sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container {
+	width: 820px;
+	padding: 0 5px;
+	margin: 0 auto;
+}
+
+.main-header {
+	margin: 0px auto;
+	width: 800px;
+	height: 22px;
+	background-color: #45688E;
+	border-radius: 0 0 3px 3px;
+	color: white;
+	padding: 10px 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.logo {
+	display: inline-block;
+}
+
+.B {
+	padding-bottom: 2px;
+	margin-bottom: 4px;
+	color: #45688E;
+	background-color: white;
+	border-radius: 3px;
+	width: 22px;
+	height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.global {
+	width: 780px;
+	height: 580px;
+	margin: 0 auto;
+	border: 2px solid black;
+	border-radius: 3px;
+	background-color: #ededed;
+	padding: 10px;
+	margin-top: 5px;
+}
+
+.visual {
+	width: 400px;
+	height: 200px;
+	margin-right: 10px;
+	border: 2px solid black;
+	border-radius: 3px;
+	float: left;
+}
+
+.cell {
+	display: table-cell;
+	width: 48px;
+	height: 48px;
+	border: 1px solid black;
+	text-align: center;
+	float: left;
+	font-size: 9px;
+}
+
+.cell[data-is="work"] {
+	background-color: green;
+}
+.cell[data-is="drink"] {
+	background-color: red;
+}
+.cell[data-is="sleep"] {
+	background-color: black;
+}
+
+.bot-avatar {
+	opacity: 0.80;
+}
+
+.menu {
+	width: 350px;
+	height: 190px;
+	border: 2px solid black;
+	padding: 5px;
+	border-radius: 3px;
+	font-size: 13px;
+	float: right;
+}
+
+.menu input {
+	padding-left: 5px;
+}
+
+.menu .punkt{
+	float: left;
+	width: 100px;
+}
+
+.bar-name {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	float: left;
+	font-size: 18px;
+	padding-top: 5px;
+}
+
+.barcell {
+	width: 200px;
+	height: 100px;
+	vertical-align: middle;
+	float: left;
+	padding-top: 35px;
+	padding-left: 20px;
+	font-size: 18px;
+}
+
+.logs {
+	width: 525px;
+	height: 260px;
+	border: 2px solid black;
+	margin-top: 10px;
+	display: table;
+	border-radius: 3px;
+	float: left;
+}
+
+.logs-label,
+.stats-label {
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+.logs-log {
+	width: 529px;
+	height: 350px;
+	overflow: auto;
+	background-color: white;
+	padding-left: 5px 5px;
+	font-size: 10.5px;
+}
+
+.logs-log p {
+	margin: 0 5px;
+}
+
+.stats {
+	width: 235px;
+	height: 370px;
+	border: 2px solid black;
+	margin-top: 10px;
+	border-radius: 3px;
+	float: right;
+}
+
+.stats-stat {
+	width: 229px;
+	height: 337px;
+	overflow: auto;
+	background-color: white;
+	padding-left: 5px;
+	padding-top: 5px;
+	font-size: 12px;
+}
+
+.stat-bot {
+	width: 200px;
+	height: auto;
+	min-height: 90px;
+	border: 2px solid black;
+	margin-top: 5px;
+	display: table;
+	border-radius: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	font-size: 12px;
+}
+
+.stat-bot p {
+	margn: 0 2px;
+}
+
+.map {
+	width: 800px;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin: 0px auto;
+	margin-top: 5px;
+}
+#modal_form {
+	width: 400px; 
+	height: 180px;
+	border-radius: 5px;
+	border: 2px #000 solid;
+	background: #fff;
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	margin-top: -220px;
+	margin-left: -150px; 
+	display: none;
+	opacity: 0;
+	z-index: 5;
+	padding: 20px 10px;
+}
+#modal_form #modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+#overlay {
+	z-index:3;
+	position:fixed;
+	background-color:#000;
+	opacity:0.5;
+	width:100%; 
+	height:100%;
+	top:0;
+	left:0;
+	cursor:pointer;
+	display:none;
+}

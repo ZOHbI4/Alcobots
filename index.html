@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alcosim</title>
+	<script src="jquery-1.12.4.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="alco.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<div class="logo B">
+					B
+				</div>
+				<span class="logo">
+					ALCOSIME
+				</span>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<section class="global clearfix">
+					<div class="visual clearfix">
+						<div class="table-vis">
+							<!--Сюда рисуются алкоботы-->
+						</div>
+					</div>
+					<div class="menu">
+						<form id="menu">
+							<label for="beer_menu">
+								<span class="punkt">Цена Пива:</span>
+							</label>
+				            <input type="text" name="beer" id="beer_menu"><br>
+				            
+				            <label for="vodka_menu">
+				            	<span class="punkt">Цена Водки:</span>
+				            </label>
+				            <input type="text" name="vodka" id="vodka_menu"><br>
+				            
+				            <label for="ersh_menu">
+				            	<span class="punkt">Цена "Ерша":</span>
+				            </label>
+				            <input type="text" name="ersh" id="ersh_menu"><br>
+				            
+				            <label for="lemon_menu">
+				            	<span class="punkt">Цена Лимона:</span>
+				            </label>
+				            <input type="text" name="lemon" id="lemon_menu"><br>
+						</form>
+						<div class="bar-log">
+							<!--Сюда рисуется имя и баланс бара-->
+						</div>
+					</div>
+					<div class="logs">
+						<div class="logs-label">Логи</div>
+						<div class="logs-log"></div>
+					</div>
+					<div class="stats">
+						<div class="stats-label">Статистика</div>
+						<div class="stats-stat"></div>
+					</div>
+				</section>
+				<div id="YMapsID" class="map" style="width:800px; height:400px"></div>
+				<div id="modal_form">
+				      <span id="modal_close">X</span> 
+				      <p> Привет!</p>
+				      <p>
+				      	Это веселый симулятор алкоголиков В'АЛКОСИМЕ. Тут 32 случайных человека выпивают и идут подзаработать когда деньги на выпивку заканчиваются. А потом по новой.
+				      </p>
+				      <button id="btn">Погнали!</button>
+				</div>
+				<div id="overlay"></div>
+			</div>
+		</main>
+	</body>
+</html>
